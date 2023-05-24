@@ -1,55 +1,84 @@
 *{
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
 }
+
+body{
+    height: 10000px;
+}
+
 .block{
     width: 500px;
     height: 500px;
-    background-color: aqua;
-    border: 1px solid #ccc;
+    border: 1px solid black;
+    background: yellow;
     margin: 100px;
-    
-    /*  */
-    
     display: flex;
-    
-    /* flex-direction: row; */
-    /* flex-direction: column; */
-    /* flex-direction: row-reverse; */
-    /* flex-direction: column-reverse; */
-    /* justify-content: flex-start; */
-    /* justify-content:center ; */
-    /* justify-content: flex-end; */
-    /* justify-content: space-between; */
-    /* justify-content: space-around; */
-    /* justify-content: space-evenly; */
+    /* align-items: center; */
     /* align-items: flex-start; */
-    /* align-items: center;   
-    */
-    /* align-items: baseline; */
-     /* align-items: stretch; */
-     /* flex-wrap: wrap; agar kopayp ketsa */
-     /* align-content: flex-start; */
-     /* align-content: space-between; */
-     
+    /* align-items: flex-end; */
+    /* justify-content:end; */
+    /* align-items: flex-end; */
+    /* justify-content: space-around; */
+    /* align-items: center; */
+    /* justify-content: ; */
+    /* align-items: center; */
+    /* justify-content: flex-end; */
+    flex-direction: column;
+    position: relative;
+    
 }
 .box{
-    width: 80px;
-    height: 80px;
-    border: 1px solid white;
+    width: 70px;
+    height: 70px;
+    border: black 2px solid;
+    
 }
+
 .box:nth-child(1){
-    background-color: rgb(235, 224, 224);
+ color: #ffffff;
+ background-color: #000;
+ order: -2;
+ position: relative;
+ 
+ right: 0;
+ left: 101px;
+ top: 0;
+ bottom: 0;
+ 
+
 }
 .box:nth-child(2){
-    background-color: rgb(230, 222, 222);
-
+    color: #ffffff;
+    background-color: red;
+    order: -4;
+    position: relative;
+    /* left: 10px; */
+    right:-50px ;
+    
+    bottom: 34px;
 }
 .box:nth-child(3){
-    background-color: rgb(240, 231, 231);
+    color: #ffffff;
+    background-color: blue;
+    order: -3;
+    position: absolute;
+
+    right:-100px;
+    top: -10px;
+     
 }
 .box:nth-child(4){
-    background-color: rgb(243, 233, 233);
+    color: #ffffff;
+    background-color: green;
+    order: -1;
+    position: fixed;
+    
+    right: 40px;
+    bottom: 40%;
 
 }
+
+
+
